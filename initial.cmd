@@ -9,6 +9,6 @@ powershell -c "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/kirillp
 
 powershell ./wget.cmd
 
-cd "%INITIALPATH%"
+@REM cd "%INITIALPATH%"
 
-del initial.cmd
+@REM del initial.cmd
