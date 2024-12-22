@@ -4,12 +4,10 @@ function random_text {
 
 $wd = random_text
 $path = "$env:temp/$wd"
-$initial_dir = %cd%
+$initial_dir = Get-Location
 
 mkdir $path
 cd $path
-
-echo "" > poc.txt
 
 cd $initial_dir
 
